@@ -68,3 +68,84 @@ a {
 
     overflow: visible !important;
 }
+
+.sidebar-logo {
+    height: 76px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 28px;
+
+    border-bottom:
+        1px solid #f1f1f1;
+}
+
+.sidebar-logo a {
+    text-decoration: none;
+
+    color: var(--green);
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+}
+
+.profile-box {
+    position: relative;
+
+    height: 78px;
+
+    padding:
+        0 22px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+    
+}
+
+.profile-avatar {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+
+    background:
+        #eeeeee;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #444;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+.profile-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+
+    flex: 1;
+}
+
+.profile-info strong {
+    font-size: 14px;
+}
+
+.profile-info span {
+    color: #777;
+
+    font-size: 12px;
+}
