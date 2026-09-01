@@ -149,3 +149,91 @@ a {
 
     font-size: 12px;
 }
+
+.profile-arrow {
+    border: 0;
+
+    background: transparent;
+
+    color: #555;
+
+    font-size: 23px;
+}
+
+.profile-menu {
+    position: absolute;
+
+    left: 275px;
+
+    top: 0px;
+
+    width: 355px;
+
+    background: #fff;
+
+    border:
+        1px solid #e2e2e2;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 30px
+        rgba(0, 0, 0, .15);
+
+    z-index: 1000;
+
+    padding: 15px;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform:
+        translateY(-5px);
+
+    transition:
+        opacity .15s ease,
+        transform .15s ease,
+        visibility .15s;
+}
+
+.profile-box:hover .profile-menu,
+.profile-menu:hover {
+    opacity: 1;
+
+    visibility: visible;
+
+    transform:
+        translateY(0);
+    
+}
+
+.profile-menu-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding:
+        5px 5px 15px;
+}
+
+.menu-avatar {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+
+    background:
+        #eeeeee;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 700;
+
+    color: #555;
+}
