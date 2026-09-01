@@ -4,15 +4,12 @@
     box-sizing: border-box;
 }
 
-
 html,
 body {
     min-height: 100%;
 }
 
-
 body {
-
     font-family:
         Arial,
         Helvetica,
@@ -29,11 +26,7 @@ body {
     flex-direction: column;
 }
 
-
-/* ================= HEADER ================= */
-
 .top-header {
-
     height: 70px;
 
     display: flex;
@@ -45,9 +38,7 @@ body {
     border-bottom: 1px solid #eee;
 }
 
-
 .logo {
-
     font-size: 27px;
 
     font-weight: 800;
@@ -57,11 +48,7 @@ body {
     text-decoration: none;
 }
 
-
-/* ================= PAGE ================= */
-
 .signup-page {
-
     flex: 1;
 
     display: flex;
@@ -71,9 +58,7 @@ body {
     padding: 70px 20px 50px;
 }
 
-
 .signup-box {
-
     width: 100%;
 
     max-width: 720px;
@@ -81,9 +66,7 @@ body {
     text-align: center;
 }
 
-
 .signup-box h1 {
-
     font-size: 42px;
 
     font-weight: 600;
@@ -91,9 +74,7 @@ body {
     margin-bottom: 12px;
 }
 
-
 .subtitle {
-
     color: #666;
 
     font-size: 16px;
@@ -101,11 +82,7 @@ body {
     margin-bottom: 45px;
 }
 
-
-/* ================= ERROR ================= */
-
 .error-message {
-
     background: #fff4f4;
 
     border: 1px solid #d93025;
@@ -119,11 +96,7 @@ body {
     margin-bottom: 20px;
 }
 
-
-/* ================= ROLE CARDS ================= */
-
 .role-container {
-
     display: flex;
 
     justify-content: center;
@@ -131,9 +104,7 @@ body {
     gap: 55px;
 }
 
-
 .role-card {
-
     width: 210px;
 
     border: 1px solid #ddd;
@@ -154,9 +125,7 @@ body {
         transform .2s ease;
 }
 
-
 .role-card:hover {
-
     border-color: #14a800;
 
     box-shadow:
@@ -165,9 +134,7 @@ body {
     transform: translateY(-2px);
 }
 
-
 .role-card.selected {
-
     border: 2px solid #14a800;
 
     box-shadow:
@@ -176,9 +143,7 @@ body {
     background: #f5fff2;
 }
 
-
 .role-icon {
-
     height: 190px;
 
     display: flex;
@@ -192,9 +157,7 @@ body {
     border-radius: 7px 7px 0 0;
 }
 
-
 .role-icon svg {
-
     width: 78px;
 
     height: 78px;
@@ -210,9 +173,7 @@ body {
     stroke-linejoin: round;
 }
 
-
 .role-name {
-
     font-size: 19px;
 
     font-weight: 500;
@@ -220,15 +181,11 @@ body {
     margin-top: 18px;
 }
 
-
 .role-name span {
-
     font-size: 18px;
 }
 
-
 .role-description {
-
     color: #777;
 
     font-size: 14px;
@@ -238,11 +195,7 @@ body {
     margin-bottom: 20px;
 }
 
-
-/* ================= CONTINUE ================= */
-
 .continue-btn {
-
     width: 420px;
 
     max-width: 100%;
@@ -270,23 +223,15 @@ body {
     transition: .2s;
 }
 
-
 .continue-btn.enabled {
-
     opacity: 1;
 }
 
-
 .continue-btn.enabled:hover {
-
     background: #108a00;
 }
 
-
-/* ================= LOGIN ================= */
-
 .login-text {
-
     margin-top: 55px;
 
     font-size: 14px;
@@ -294,9 +239,7 @@ body {
     color: #666;
 }
 
-
 .login-text a {
-
     color: #14a800;
 
     text-decoration: none;
@@ -304,17 +247,11 @@ body {
     font-weight: 600;
 }
 
-
 .login-text a:hover {
-
     text-decoration: underline;
 }
 
-
-/* ================= FOOTER ================= */
-
 .signup-footer {
-
     min-height: 95px;
 
     background: #111;
@@ -334,9 +271,7 @@ body {
     font-size: 12px;
 }
 
-
 .signup-footer a {
-
     color: #ddd;
 
     text-decoration: none;
@@ -344,92 +279,51 @@ body {
     margin-left: 8px;
 }
 
-
 .signup-footer a:hover {
-
     text-decoration: underline;
 }
 
-
 .signup-footer span {
-
     margin-left: 8px;
 }
 
-
-/* ================= MOBILE ================= */
-
 @media (max-width: 600px) {
-
     .top-header {
-
         padding: 0 20px;
     }
 
-
     .signup-page {
-
         padding-top: 45px;
     }
 
-
     .signup-box h1 {
-
         font-size: 32px;
     }
 
-
     .role-container {
-
         gap: 15px;
     }
 
-
     .role-card {
-
         width: 160px;
     }
 
-
     .role-icon {
-
         height: 145px;
     }
 
-
     .role-icon svg {
-
         width: 60px;
 
         height: 60px;
     }
 
-
     .role-name {
-
         font-size: 16px;
     }
 
-
     .role-description {
-
         font-size: 12px;
     }
 }
 
-
-@media (max-width: 420px) {
-
-    .role-container {
-
-        flex-direction: column;
-
-        align-items: center;
-    }
-
-
-    .role-card {
-
-        width: 240px;
-    }
-}
