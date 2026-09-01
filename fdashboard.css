@@ -310,3 +310,99 @@ a {
     transition:
         left .2s;
 }
+
+.toggle.active {
+    background:
+        #323b4a;
+}
+
+.toggle.active span {
+    left: 27px;
+}
+
+.profile-menu-links {
+    padding:
+        8px 0;
+}
+
+.profile-menu-links a,
+.profile-menu-bottom a {
+    min-height: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding:
+        0 8px;
+
+    text-decoration: none;
+
+    color: #444;
+
+    border-radius: 7px;
+}
+
+.profile-menu-links a:hover,
+.profile-menu-bottom a:hover {
+    background:
+        #f5f5f5;
+}
+
+.menu-icon {
+    width: 21px;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 18px;
+}
+
+.theme-row {
+    position: relative;
+}
+
+.theme-arrow {
+    margin-left: auto;
+
+    font-size: 18px;
+
+    color: #666;
+}
+
+ */
+
+.sidebar-nav {
+    flex: 1;
+
+    min-height: 0;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px 12px;
+}
+
+.sidebar-nav::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+    background: #cfcfcf;
+    border-radius: 10px;
+}
+
+.sidebar-nav {
+    scrollbar-width: thin;
+    scrollbar-color: #cfcfcf transparent;
+}
