@@ -2,7 +2,7 @@
 
 session_start();
 
-
+require_once "config.php";
 
 $loginEmail = $_SESSION["email"]
     ?? $_SESSION["user_email"]
@@ -65,17 +65,7 @@ if ($initials === "") {
     $initials = "U";
 }
 
-$freelancer = [
-    "name" => $fullName,
-    "plan" => "Freelancer Basic",
-    "title" => "web developer",
-    "profile_visibility" => "Public",
-    "profile_complete" => 40,
-    "availability" => "Off",
-    "profile_pic" => $user["profile_pic"] ?? "",
-    "initials" => $initials,
-    "country" => $user["country"] ?? ""
-];
+
 
 $jobs = [];
 
