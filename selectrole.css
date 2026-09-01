@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    min-height: 100%;
+}
+
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: #222;
+
+    background: #fff;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* ================= HEADER ================= */
+
+.top-header {
+
+    height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 0 35px;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.logo {
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    color: #14a800;
+
+    text-decoration: none;
+}
+
+
+/* ================= PAGE ================= */
+
+.signup-page {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+
+    padding: 70px 20px 50px;
+}
+
+
+.signup-box {
+
+    width: 100%;
+
+    max-width: 720px;
+
+    text-align: center;
+}
+
+
+.signup-box h1 {
+
+    font-size: 42px;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+
+.subtitle {
+
+    color: #666;
+
+    font-size: 16px;
+
+    margin-bottom: 45px;
+}
+
+
+/* ================= ERROR ================= */
+
+.error-message {
+
+    background: #fff4f4;
+
+    border: 1px solid #d93025;
+
+    color: #b42318;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= ROLE CARDS ================= */
+
+.role-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 55px;
+}
+
+
+.role-card {
+
+    width: 210px;
+
+    border: 1px solid #ddd;
+
+    background: #fff;
+
+    border-radius: 8px;
+
+    padding: 0;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        transform .2s ease;
+}
+
+
+.role-card:hover {
+
+    border-color: #14a800;
+
+    box-shadow:
+        0 5px 18px rgba(0, 0, 0, .08);
+
+    transform: translateY(-2px);
+}
+
+
+.role-card.selected {
+
+    border: 2px solid #14a800;
+
+    box-shadow:
+        0 0 0 3px rgba(20, 168, 0, .12);
+
+    background: #f5fff2;
+}
+
+
+.role-icon {
+
+    height: 190px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f1fbdc;
+
+    border-radius: 7px 7px 0 0;
+}
+
+
+.role-icon svg {
+
+    width: 78px;
+
+    height: 78px;
+
+    fill: none;
+
+    stroke: #333;
+
+    stroke-width: 2;
+
+    stroke-linecap: round;
+
+    stroke-linejoin: round;
+}
+
+
+.role-name {
+
+    font-size: 19px;
+
+    font-weight: 500;
+
+    margin-top: 18px;
+}
+
+
+.role-name span {
+
+    font-size: 18px;
+}
+
+
+.role-description {
+
+    color: #777;
+
+    font-size: 14px;
+
+    margin-top: 7px;
+
+    margin-bottom: 20px;
+}
+
+
+/* ================= CONTINUE ================= */
+
+.continue-btn {
+
+    width: 420px;
+
+    max-width: 100%;
+
+    margin-top: 45px;
+
+    height: 48px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: #14a800;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    opacity: .45;
+
+    transition: .2s;
+}
+
+
+.continue-btn.enabled {
+
+    opacity: 1;
+}
+
+
+.continue-btn.enabled:hover {
+
+    background: #108a00;
+}
+
+
+/* ================= LOGIN ================= */
+
+.login-text {
+
+    margin-top: 55px;
+
+    font-size: 14px;
+
+    color: #666;
+}
+
+
+.login-text a {
+
+    color: #14a800;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+
+.login-text a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* ================= FOOTER ================= */
+
+.signup-footer {
+
+    min-height: 95px;
+
+    background: #111;
+
+    color: #ddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-size: 12px;
+}
+
+
+.signup-footer a {
+
+    color: #ddd;
+
+    text-decoration: none;
+
+    margin-left: 8px;
+}
+
+
+.signup-footer a:hover {
+
+    text-decoration: underline;
+}
+
+
+.signup-footer span {
+
+    margin-left: 8px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .top-header {
+
+        padding: 0 20px;
+    }
+
+
+    .signup-page {
+
+        padding-top: 45px;
+    }
+
+
+    .signup-box h1 {
+
+        font-size: 32px;
+    }
+
+
+    .role-container {
+
+        gap: 15px;
+    }
+
+
+    .role-card {
+
+        width: 160px;
+    }
+
+
+    .role-icon {
+
+        height: 145px;
+    }
+
+
+    .role-icon svg {
+
+        width: 60px;
+
+        height: 60px;
+    }
+
+
+    .role-name {
+
+        font-size: 16px;
+    }
+
+
+    .role-description {
+
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 420px) {
+
+    .role-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+
+    .role-card {
+
+        width: 240px;
+    }
+}
