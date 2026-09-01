@@ -327,3 +327,14 @@ body {
     }
 }
 
+@media (max-width: 420px) {
+    .role-container {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .role-card {
+        width: 240px;
+    }
+}
