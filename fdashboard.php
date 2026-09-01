@@ -1,4 +1,123 @@
+<?php
 
+session_start();
+
+
+
+$loginEmail = $_SESSION["email"]
+    ?? $_SESSION["user_email"]
+    ?? $_SESSION["login_email"]
+    ?? "";
+
+if ($loginEmail === "") {
+    header("Location: index.php");
+    exit;
+}
+
+$userStmt = $conn->prepare("
+    SELECT
+        first_name,
+        last_name,
+        country,
+        profile_pic
+    FROM users
+    WHERE email = ?
+    LIMIT 1
+");
+
+if (!$userStmt) {
+    die("Database query failed: " . htmlspecialchars($conn->error));
+}
+
+$userStmt->bind_param("s", $loginEmail);
+$userStmt->execute();
+$userResult = $userStmt->get_result();
+
+if ($userResult->num_rows !== 1) {
+    $userStmt->close();
+    header("Location: index.php");
+    exit;
+}
+
+$user = $userResult->fetch_assoc();
+$userStmt->close();
+
+$firstName = trim((string)($user["first_name"] ?? ""));
+$lastName = trim((string)($user["last_name"] ?? ""));
+
+$fullName = trim($firstName . " " . $lastName);
+
+if ($fullName === "") {
+    $fullName = "Freelancer";
+}
+
+$initials = "";
+
+if ($firstName !== "") {
+    $initials .= strtoupper(substr($firstName, 0, 1));
+}
+
+if ($lastName !== "") {
+    $initials .= strtoupper(substr($lastName, 0, 1));
+}
+
+if ($initials === "") {
+    $initials = "U";
+}
+
+$freelancer = [
+    "name" => $fullName,
+    "plan" => "Freelancer Basic",
+    "title" => "web developer",
+    "profile_visibility" => "Public",
+    "profile_complete" => 40,
+    "availability" => "Off",
+    "profile_pic" => $user["profile_pic"] ?? "",
+    "initials" => $initials,
+    "country" => $user["country"] ?? ""
+];
+
+$jobs = [];
+
+$sql = "
+    SELECT
+        id,
+        title,
+        type,
+        level,
+        budget,
+        posted,
+        proposals,
+        description,
+        skills,
+        verified,
+        rating,
+        spent,
+        country,
+        category,
+        created_at
+    FROM jobs
+    ORDER BY created_at DESC
+";
+
+$result = $conn->query($sql);
+
+if ($result === false) {
+    die(
+        "Database error: " .
+        htmlspecialchars(
+            $conn->error,
+            ENT_QUOTES,
+            "UTF-8"
+        )
+    );
+}
+
+while ($row = $result->fetch_assoc()) {
+    $jobs[] = $row;
+}
+
+?>
 <!DOCTYPE html>
 
 <html lang="en">
