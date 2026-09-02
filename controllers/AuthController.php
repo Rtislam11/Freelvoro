@@ -115,6 +115,7 @@ class AuthController {
     /**
      * Process Login Form Submission
      */
+    /** Handle user login with session **/
     public function login(): void {
         if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
             header("Location: index.php?action=login");
@@ -266,3 +267,4 @@ class AuthController {
         exit;
     }
 }
+
