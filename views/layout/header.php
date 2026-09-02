@@ -73,3 +73,4 @@ $currentAction = $_GET['action'] ?? 'login';
                 <button type="button" class="toast-close">&times;</button>
             </div>
         <?php endif; ?>
+
