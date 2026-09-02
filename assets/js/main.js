@@ -1,4 +1,8 @@
 /**
+ * Freelancing Marketplace BD
+ * Version: 1.0.0 | Updated: 2026-09-02
+ */
+/**
  * Integrated Freelance Marketplace
  * Core Client-side Scripts & Interactive Behaviors
  */
@@ -124,3 +128,4 @@ document.addEventListener('DOMContentLoaded', () => {
         return confirm(message || 'Are you sure you want to proceed with this action?');
     };
 });
+
