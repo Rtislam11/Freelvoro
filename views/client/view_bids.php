@@ -43,11 +43,7 @@
             <h2 style="font-size:1.35rem; font-weight:800; color:var(--text-main);">Submitted Proposals & Bids</h2>
             <p style="color:var(--text-muted); font-size:0.9rem;">Review cover notes, compare bids, and hire the top candidate.</p>
         </div>
-        <div>
-            <span class="badge badge-in_progress" style="font-size:0.85rem; padding:0.4rem 0.9rem;">
-                <?= count($proposals) ?> <?= (count($proposals) === 1) ? 'Proposal' : 'Proposals' ?> Received
-            </span>
-        </div>
+        
     </div>
 
     <?php if (empty($proposals)): ?>
