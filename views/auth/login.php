@@ -23,7 +23,7 @@
         <form action="index.php?action=login" method="POST">
             <div class="form-group">
                 <label class="form-label" for="loginEmail">Email Address</label>
-                <input type="email" name="email" id="loginEmail" class="form-control" value="tanveer@client.com" placeholder="tanveer@client.com" required autofocus>
+                <input type="email" name="email" id="loginEmail" class="form-control" value="tanveer@client.com" placeholder="tanveer@client.com" required autofocus autocomplete="email">
             </div>
 
             <div class="form-group">
@@ -54,3 +54,4 @@
 </div>
 
 <?php require __DIR__ . '/../layout/footer.php'; ?>
+
