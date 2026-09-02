@@ -20,3 +20,5 @@
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+    <!-- Footer updated: 2026-09-02 -->
