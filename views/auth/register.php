@@ -83,7 +83,7 @@
 
             <div class="form-group">
                 <label class="form-label" for="regEmail">Email Address <span style="color:var(--danger);">*</span></label>
-                <input type="email" name="email" id="regEmail" class="form-control" placeholder="name@example.com" required>
+                <input type="email" name="email" id="regEmail" class="form-control" autocomplete="email" placeholder="name@example.com" required>
             </div>
 
             <div class="form-grid-2">
@@ -110,3 +110,4 @@
 </div>
 
 <?php require __DIR__ . '/../layout/footer.php'; ?>
+
