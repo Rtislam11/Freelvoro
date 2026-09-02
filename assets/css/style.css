@@ -907,3 +907,6 @@ a:hover {
     font-size: 2.2rem;
   }
 }
+
+/* smooth scroll *
+body { scroll-behavior: smooth; }
