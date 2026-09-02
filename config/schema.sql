@@ -91,3 +91,6 @@ INSERT INTO `proposals` (`id`, `job_id`, `freelancer_id`, `bid_amount`, `proposa
 INSERT INTO `reports` (`id`, `reporter_id`, `reported_user_id`, `job_id`, `reason`, `details`, `status`, `created_at`) VALUES
 (1, 2, 4, 1, 'Communication Delay', 'Freelancer was unresponsive for 48 hours prior to bid clarification. Requesting admin review on profile activity.', 'pending', NOW()),
 (2, 3, 5, 3, 'Off-Platform Payment Solicitation', 'User requested to move discussion outside the platform prior to contract award, violating platform terms of service.', 'pending', NOW());
+
+-- Schema version: 1.0.0 | Platform: Freelancing Marketplace BD
+
