@@ -56,6 +56,7 @@ class Proposal {
      * 3. Set job status to 'in_progress'
      * 4. Auto-reject all other pending/competing proposals for this job
      */
+    /** Atomic hire: accept bid, update job, reject others **/
     public function hireFreelancer(int $jobId, int $proposalId, int $clientId): bool {
         try {
             $this->db->beginTransaction();
@@ -118,3 +119,4 @@ class Proposal {
         ];
     }
 }
+
