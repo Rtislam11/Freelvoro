@@ -916,3 +916,6 @@ body { scroll-behavior: smooth; }
 
 /* btn active press effect */
 .btn:active { transform: scale(0.97); }
+
+/* table row hover highlight */
+.custom-table tbody tr:hover { background: var(--bg-subtle); }
