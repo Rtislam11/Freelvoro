@@ -111,3 +111,4 @@ class Report {
         return (int) ($res['total'] ?? 0);
     }
 }
+
