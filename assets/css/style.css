@@ -913,3 +913,6 @@ body { scroll-behavior: smooth; }
 
 /* form focus ring */
 .form-control:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+
+/* btn active press effect */
+.btn:active { transform: scale(0.97); }
