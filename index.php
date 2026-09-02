@@ -182,3 +182,4 @@ try {
     echo "<a href='index.php' style='display:inline-block; margin-top:1rem; padding:0.5rem 1rem; background:#dc2626; color:white; text-decoration:none; border-radius:6px;'>Return to Safety</a>";
     echo "</div>";
 }
+
