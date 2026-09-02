@@ -18,7 +18,7 @@
     </div>
 </div>
 
-<!-- KPI Summary Cards -->
+<!-- KPI Summary Cards: Total Jobs, Active, Hired, Reports -->
 <div class="stats-grid">
     <div class="stat-card">
         <div class="stat-icon-wrapper green">📋</div>
@@ -143,3 +143,4 @@
 </div>
 
 <?php require __DIR__ . '/../layout/footer.php'; ?>
+
