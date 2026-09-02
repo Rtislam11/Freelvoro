@@ -48,7 +48,10 @@
             </div>
 
             <!-- Narrative / Evidence Textarea -->
-            
+            <div class="form-group">
+                <label class="form-label" for="reportDetails">Detailed Statement & Narrative <span style="color:var(--danger);">*</span></label>
+                <textarea name="details" id="reportDetails" class="form-control" rows="6" placeholder="Provide factual details: project timeline, milestones missed, communications exchanged, and your desired resolution..." required minlength="15"></textarea>
+            </div>
 
             <div style="background:var(--warning-light); border:1px solid #fde68a; border-radius:var(--radius-md); padding:1rem; margin-top:1.5rem; display:flex; gap:0.75rem; align-items:flex-start;">
                 <div style="font-size:1.2rem;">🛡️</div>
