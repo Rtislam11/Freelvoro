@@ -21,9 +21,9 @@
     </div>
 </div>
 
-<!-- Feature A4: System Analytics Overview KPI Cards -->
+<!-- [Admin] Feature A4: System Analytics Overview KPI Cards -->
 <div class="stats-grid">
-    <!-- Total Users & Breakdown -->
+    <!-- [Admin] Total Users & Breakdown -->
     <div class="stat-card">
         <div class="stat-icon-wrapper blue">👥</div>
         <div>
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <!-- Active Job Postings -->
+    <!-- [Admin] Active Job Postings -->
     <div class="stat-card">
         <div class="stat-icon-wrapper green">⚡</div>
         <div>
@@ -47,7 +47,7 @@
         </div>
     </div>
 
-    <!-- Hires & Contracts -->
+    <!-- [Admin] Hires & Contracts -->
     <div class="stat-card">
         <div class="stat-icon-wrapper indigo">🤝</div>
         <div>
@@ -59,7 +59,7 @@
         </div>
     </div>
 
-    <!-- Pending Dispute Queue -->
+    <!-- [Admin] Pending Dispute Queue -->
     <div class="stat-card">
         <div class="stat-icon-wrapper amber">🛡️</div>
         <div>
@@ -72,7 +72,7 @@
     </div>
 </div>
 
-<!-- Feature A1: Global Content Moderation Panel -->
+<!-- [Admin] Feature A1: Global Content Moderation Panel -->
 <div class="card">
     <div class="card-header" style="flex-wrap:wrap; gap:1rem;">
         <div>
@@ -80,7 +80,7 @@
             <p style="color:var(--text-muted); font-size:0.85rem; margin-top:0.2rem;">Oversee all active and historical project postings. Delete listings that violate terms of service.</p>
         </div>
         
-        <!-- Status Filter Buttons -->
+        <!-- [Admin] Status Filter Buttons -->
         <div style="display:flex; gap:0.5rem; flex-wrap:wrap;">
             <a href="index.php?action=admin_dashboard" class="btn btn-sm <?= empty($statusFilter) ? 'btn-primary' : 'btn-secondary' ?>">All (<?= $jobStats['total_jobs'] ?>)</a>
             <a href="index.php?action=admin_dashboard&status=open" class="btn btn-sm <?= ($statusFilter === 'open') ? 'btn-primary' : 'btn-secondary' ?>">Open (<?= $jobStats['open_jobs'] ?>)</a>
@@ -154,3 +154,4 @@
 </div>
 
 <?php require __DIR__ . '/../layout/footer.php'; ?>
+
