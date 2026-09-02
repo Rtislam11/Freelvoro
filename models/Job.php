@@ -72,6 +72,7 @@ class Job {
     /**
      * Global Job Listing with optional filters (for Admin moderation and browsing)
      */
+    /** Retrieve all jobs with optional client filter **/
     public function getAllJobs(?string $status = null, ?string $category = null): array {
         $sql = "
             SELECT j.*, u.name AS client_name, u.email AS client_email,
@@ -181,3 +182,4 @@ class Job {
         ];
     }
 }
+
